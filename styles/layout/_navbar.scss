@@ -1,0 +1,53 @@
+@use '../base' as *;
+
+.navbar__menu-btn, .navbar-close-btn{
+    display: none;
+}
+
+.header{
+    z-index: 999;
+    position: fixed;
+    width: 100%;
+    height: 6rem;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    transition-property: height, background;
+    
+    .navbar{
+        position: relative;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 12.5rem;
+        transition: 300ms ease;
+
+        &__logo{
+            color: $Logo;
+            font-size: 1.8em;
+            font-family: 'Secular One', sans-serif;
+            font-weight: 600;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            text-shadow: $text-shadow;
+        }
+
+        &__container-items a{
+            color: $Logo;
+            font-family: 'Kanit', sans-serif;
+            font-size: 1em;
+            font-weight: 400;
+            text-shadow: $text-shadow;
+
+        }
+
+        &__container-items a i{
+            display: none;
+        }
+        &__container-items a:not(:last-child){
+            margin-right: 2.8125rem;
+        }
+    }
+}

@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&family=Open+Sans:wght@400;500;700;800&family=Secular+One&display=swap');
+
+//Colors
+
+$Text-Light: #020302;
+$Background-Light: #ffffff;
+$Primary-Button-Light: #0000ee;
+$Secondary-Button-Light: #f0f5f0;
+$Accent: #aaaaaa;
+$Text-Light-Hover: #f78f1e;
+$Logo: #001b64;
+
+//Typography
+a{
+    text-decoration: none;
+}
+
+// Shadows
+$text-shadow: 0px 5px 25px rgba(0, 0, 0, 0.1);
+$box-shadow: 0 5px 25px rgb(0 0 0 / 20%);
+$box-shadow-button:  0 20px 80px -10px var(--primbuttn);
+$background-blur-color: rgba(255,255,255, 0.1);
+ 
+
+// Button
+
+.cta-btn{
+    font-family: 'Open Sans', sans-serif;
+    border: none;
+    outline: none;
+    background-color: $Secondary-Button-Light;
+    color: $Text-Light;
+    font-size: 1em;
+    font-weight: 400;
+    padding: 0.5rem 1.5625rem;
+    display: flex;
+    align-items: center;
+    margin-top: 2.5rem;
+    border-radius: 0.625rem;
+    cursor: pointer;
+
+    i{
+        margin-left: 2px;
+        font-size: 1.6em;
+        transition: 0.3s ease;
+    }
+
+    &:hover i{
+        transform: translateX(5px);
+    }
+}
